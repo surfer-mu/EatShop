@@ -1,0 +1,156 @@
+.all{
+    width:70%;
+    margin: auto;
+}
+.headtop{
+    font-family: 	Microsoft YaHei;
+    color: #5E5E5E;
+    text-align: center;
+
+}
+.headtop>div{
+    float: left;
+    background-color: #FFFFFF;
+    width:64px;
+    height:40px;
+    padding: 0 10px;
+    line-height:40px;
+    font-size:16px;
+}
+.headtop>div:hover{
+    background-color: #FFF001;
+
+}
+.product{
+    margin-top: 20px;
+}
+.little-img{
+    width: 418px;
+    height: 48px;
+}
+.little-img>img{
+    margin: 15px 11px 10px 11px;
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+.little-img>img:hover{
+    border: 2px solid #000000;
+}
+.product-font{
+    float: right;
+}
+.product-font h1 {
+    padding-bottom: .2em;
+/*    line-height: 1;*/
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+.product-font .newp{
+    font-size: 14px;
+    color: #dd2727;
+}
+.promise {
+    color: #204ad7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.money{
+    width: 480px;
+    height: 65px;
+    background-color: #e9e9e9;
+
+    padding-top: 5px;
+    margin-right: 20px;
+}
+.willbuy {
+
+    margin: 10px 20px 0 10px;
+    padding: 0 0 10px;
+}
+
+.tb-ch,.tb1{
+    color: #999;
+    font-size: 12px;
+    text-align: left;
+    float: left;
+    width: 69px;
+    margin: 3px 0 0 8px;
+    
+}
+.tm-price{
+
+    color: #333;
+    font-size: 16px;
+    padding-right: 15px;
+}
+.tbqian{
+    color: #C40000;
+
+    font-size: 30px;
+}
+.tbmoneyhua{
+    color: #DD2727;
+    font-size: 12px;
+    margin-left: 6px;
+
+}
+.custermer {
+    border: 1px dotted #c9c9c9;
+    border-width: 1px 0;
+    margin: -1px 20px 0 0;
+    padding: 10px 0;
+
+}
+
+.feel{
+    /*float: left;*/
+    line-height: 16px;
+    height: 16px;
+    color: #999;
+}
+.tm-ind-panel .tm-count {
+
+    line-height: 16px;
+    height: 16px;
+    color: #c40000;
+    font-weight: 700;
+    margin-left: 3px;
+}
+.tm-r{
+
+    line-height: 16px;
+    height: 16px;
+    color: #c40000;
+    font-weight: 700;
+    margin-left: 3px;
+}
+.tm-g{
+    color: #280;
+}
+.count{
+    width: 554px;
+    height: 100px;
+    overflow: hidden;
+}
+.cnt{
+    text-align: left;
+    float: left;
+    width: 66px;
+    color: #878787;
+    margin-left: 1.2em;
+}
+.in{
+    height: 30px;
+    width: 60px;
+    margin-top: 34px;
+    border: 1px solid #dddddd;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+}
+.ins {
+    float: left;
+}

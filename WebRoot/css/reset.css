@@ -1,0 +1,40 @@
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td
+{
+     margin:0;
+     padding:0;
+    
+     outline:0;
+     font-size:100%;
+
+ }
+body {
+
+    font-size: 12px;
+    line-height:1;
+    background: #fff;
+}
+
+ul {
+    list-style:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    color: #6c6c6c;
+}
+a:hover{
+    color: #f40;
+    transition: color .2s ease-in-out;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+

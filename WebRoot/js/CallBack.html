@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function ajaxSubmit(){
+		var xmlhttp;
+		if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp = new XMLHttpRequest();
+		} else {// code for IE6, IE5
+			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		return xmlhttp;
+		
+	}
+	
+	function search(){
+	var GETCODEURL="https://open.weixin.qq.com/connect/oauth2/authorize?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE#wechat_redirect";
+  	var  APPID="wxcd60bef4dff8529e";
+    var APPSECRET="ac9c8df2943e28805931c4a8d2269dd2";
+    var USERINFOSCOPE = "snsapi_userinfo";
+     var GETCODEURL="https://open.weixin.qq.com/connect/oauth2/authorize?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE#wechat_redirect";
+        var backUrl= "http://beymse.natappfree.cc/callBackUrl";
+        //backUrl=encodeURI(encodeURI(backUrl)); 
+       backUrl= encodeURIComponent(encodeURIComponent(backUrl));
+       var url=GETCODEURL.replace("APPID",APPID).replace("SECRET",APPSECRET).replace("SCOPE",USERINFOSCOPE).replace("REDIRECT_URI",backUrl);
+		alert(url);
+		document.getElementById("div").innerHTML=url;
+
+		var xmlHttp=ajaxSubmit();
+		xmlHttp.open("get",url,true);
+		xmlHttp.send(null);
+		
+		xmlHttp.onreadystatechange=function(){
+			
+			if(xmlHttp.readyState==4&&xmlHttp.status==200){
+				alert("成功的发送");
+			}
+		}
+		 
+	}
+
+</script>
+</head>
+<body>
+<button onclick="search()">haha</button>
+<div id="div"></div>
+</body>
+</html>
